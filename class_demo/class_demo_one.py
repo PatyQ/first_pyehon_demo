@@ -5,7 +5,7 @@ class Animal:
         print(f"{self.variety}吃饭")
 
 
-class Dog(Animal):
+class Dog(Animal):  # 继承
 
     def __init__(self, name, color):
         self.name = name
@@ -25,6 +25,10 @@ class Fish(Animal):
 
     def swim(self):
         print("鱼游泳")
+
+    # 重写方法
+    def eat(self):
+        print(f"{self.variety}吃虾米")
 
 
 def Demo():
