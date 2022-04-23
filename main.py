@@ -2,7 +2,7 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-from class_demo.class_demo_one import Dog
+from class_demo.class_demo_one import Dog, Demo
 
 
 def print_hi(name):
@@ -39,7 +39,7 @@ def show():
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
-    my_dog = Dog("豆豆", "黄色", "柴犬")  # 构造函数参数必须全填,不能为空
+    my_dog = Dog("豆豆", "黄色")  # 构造函数参数必须全填,不能为空
     # my_dog2 = Dog()
     Dog.roll_over(my_dog)
     my_dog.sit()
@@ -48,8 +48,7 @@ if __name__ == '__main__':
     # print(my_dog2)
     my_dog.show = show
     my_dog.show()
-
-
+    Demo()
     print("--------------------------------")
     c = ''.join(["a", 'b', 'c', 'd'])
     s = 0

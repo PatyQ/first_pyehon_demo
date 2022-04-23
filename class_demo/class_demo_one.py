@@ -1,9 +1,15 @@
-class Dog:
+class Animal:
+    variety = ""  # 品种
 
-    def __init__(self, name, color, variety):
+    def eat(self):
+        print(f"{self.variety}吃饭")
+
+
+class Dog(Animal):
+
+    def __init__(self, name, color):
         self.name = name
         self.color = color
-        self.variety = variety  # 品种
 
     def sit(self):
         print(f"{self.name} is now sitting.")
@@ -12,3 +18,16 @@ class Dog:
         print(f"{self.name} rolled over!")
 
 
+class Fish(Animal):
+    def __init__(self, shape, size):
+        self.shape = shape
+        self.size = size
+
+    def swim(self):
+        print("鱼游泳")
+
+
+def Demo():
+    fish = Fish("oval", "BIG FISH")
+    fish.variety = "金鱼"
+    fish.eat()
