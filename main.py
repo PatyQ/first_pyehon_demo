@@ -2,6 +2,7 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from class_demo.class_demo_one import Dog
 
 
 def print_hi(name):
@@ -30,9 +31,26 @@ def demo_two(str, list):
 def demo_six(*key, **key2):
     pass
 
+
+def show():
+    print("定义在类之外的函数")
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
+    my_dog = Dog("豆豆", "黄色", "柴犬")  # 构造函数参数必须全填,不能为空
+    # my_dog2 = Dog()
+    Dog.roll_over(my_dog)
+    my_dog.sit()
+    my_dog.age = 3
+    print(my_dog)
+    # print(my_dog2)
+    my_dog.show = show
+    my_dog.show()
+
+
+    print("--------------------------------")
     c = ''.join(["a", 'b', 'c', 'd'])
     s = 0
     l = [1, 2, 3]
@@ -53,3 +71,5 @@ if __name__ == '__main__':
         print("not" + "go")
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
