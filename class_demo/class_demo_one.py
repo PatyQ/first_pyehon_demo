@@ -28,7 +28,8 @@ class Fish(Animal):
 
     # 重写方法
     def eat(self):
-        print(f"{self.variety}吃虾米")
+        super().eat()  # 金鱼吃饭
+        print(f"{self.variety}吃虾米")  # 金鱼吃虾米
 
 
 def Demo():
